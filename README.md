@@ -1,0 +1,5 @@
+# Weather_App_Wk6
+
+This project was a culimation of everything we went over for the last six weeks of the Full-Stack Bootcamp class.  The goal was to build a weather forcast dashboard that had an input form to search for a particular city.  That search result showed current and 5-day conditions for that location, and added that location to the search history.  The results included city name, the current date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index.  The instructions were to include a color that shows whether the UV index was considered to be "favorable, moderate, or severe", but since I don't know what those considerations are compared to the number, I just left the number and let the user to decide if the results were "favorable, moderate, or severe", since I have no idea.
+
+Also, when the user chooses to search for another city, the city is added to the search history as a clickable button, which will display the weather conditions, as it did before.
