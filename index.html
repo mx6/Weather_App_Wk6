@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather Application</title>
+
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- N O M A N S L A N D -->
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+<!-- left column for city input and city history -->
+
+            <div class="col-md-4" data-type="pickChoose">
+                Search for your weather forecast: 
+                <form>
+                    <div class="form-group" id="city" data-type="city">
+                      <label for="cityName"> </label>
+                      <input type="cityName" class="form-control" id="cityName" aria-describedby="cityName" data-type="cityName" placeholder="City Name">
+                      <button type="submit" class="btn btn-primary" id="citySubmit" data-type="citySubmit">Submit</button>
+                    </div>
+                    
+                  </form>
+                  <br>
+                  <div class="cityHistory" id="cityHistory" data-type="cityHistory">
+                    City history goes here
+                </div>
+            </div>
+
+<!-- right column for selected weather forecast and data -->
+            <div class="col-md-8" data-input="weatherForecast">
+                Selected weather data
+                <div class="weatherData" id="weatherData" data-type="weatherData"> </div>
+                <div class="weatherData" id="weatherData" data-type="weatherData">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Five-day Forecast:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!-- script links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
