@@ -101,7 +101,7 @@ function cityHistoryData(city) {
 
 function getUvIndex(lat, lon) {
   let appid = "543832c704f98c368b007735d22e1b0c"
-  let queryURL = `http://api.openweathermap.org/data/2.5/uvi?appid=${appid}&lat=${lat}&lon=${lon}`
+  let queryURL = `https://api.openweathermap.org/data/2.5/uvi?appid=${appid}&lat=${lat}&lon=${lon}`
   // if (uvIndex < 5) {
   //   console.log("not so bright");
   //   var uvGreen = $("<img>").attr("src", "./uv_green.gif");
