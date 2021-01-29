@@ -176,59 +176,69 @@ function displayWeather(response) {
   $("#weatherData").append(weatherImage);
   $("#weatherData").append(weatherUV);
   // $("#weatherData").append(weatherUVimage);
-
+console.log(response);
 
   // five-day forecast
 
   var tBody = $("tbody");
   tBody.empty()
   var tRow = $("<tr>");
+  var tColumn = $("<td>");
   var dayOneDate = $("<p>").text(response.list[0].dt_txt);
-  var dayOneTemp = $("<td>").text(response.list[0].main.temp + " Degrees, F");
-  var dayOneHumidity = $("<td>").text(response.list[0].main.humidity + " Units of Humidity");
-  var dayOneWind = $("<td>").text("Wind at " + response.list[0].wind.speed + " MPH");
+  var dayOneTemp = $("<li>").text(response.list[0].main.temp + " Degrees, F");
+  var dayOneHumidity = $("<li>").text(response.list[0].main.humidity + " Units of Humidity");
+  var dayOneWind = $("<li>").text("Wind at " + response.list[0].wind.speed + " MPH");
   var dayOneImage = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + response.list[0].weather[0].icon + "@2x.png");
-  tRow.append(dayOneDate, dayOneTemp, dayOneHumidity, dayOneWind, dayOneImage);
+  tColumn.append(dayOneDate, dayOneTemp, dayOneHumidity, dayOneWind, dayOneImage);
+  tRow.append(tColumn);
   tBody.append(tRow);
 
   var tBody = $("tbody");
-  var tRow = $("<tr>");
+  // var tRow = $("<tr>");
+  var tColumn = $("<td>");
   var dayTwoDate = $("<p>").text(response.list[8].dt_txt);
-  var dayTwoTemp = $("<td>").text(response.list[8].main.temp + " Degrees, F");
-  var dayTwoHumidity = $("<td>").text(response.list[8].main.humidity + " Units of Humidity");
-  var dayTwoWind = $("<td>").text("Wind at " + response.list[8].wind.speed + " MPH");
+  var dayTwoTemp = $("<li>").text(response.list[8].main.temp + " Degrees, F");
+  var dayTwoHumidity = $("<li>").text(response.list[8].main.humidity + " Units of Humidity");
+  var dayTwoWind = $("<li>").text("Wind at " + response.list[8].wind.speed + " MPH");
   var dayTwoImage = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + response.list[8].weather[0].icon + "@2x.png");
-  tRow.append(dayTwoDate, dayTwoTemp, dayTwoHumidity, dayTwoWind, dayTwoImage);
-  tBody.append(tRow);
+  tColumn.append(dayTwoDate, dayTwoTemp, dayTwoHumidity, dayTwoWind, dayTwoImage);
+  tRow.append(tColumn);
+  // tBody.append(tRow);
 
   var tBody = $("tbody");
-  var tRow = $("<tr>");
+  // var tRow = $("<tr>");
+  var tColumn = $("<td>");
   var dayThreeDate = $("<p>").text(response.list[16].dt_txt);
-  var dayThreeTemp = $("<td>").text(response.list[16].main.temp + " Degrees, F");
-  var dayThreeHumidity = $("<td>").text(response.list[16].main.humidity + " Units of Humidity");
-  var dayThreeWind = $("<td>").text("Wind at " + response.list[16].wind.speed + " MPH");
+  var dayThreeTemp = $("<li>").text(response.list[16].main.temp + " Degrees, F");
+  var dayThreeHumidity = $("<li>").text(response.list[16].main.humidity + " Units of Humidity");
+  var dayThreeWind = $("<li>").text("Wind at " + response.list[16].wind.speed + " MPH");
   var dayThreeImage = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + response.list[16].weather[0].icon + "@2x.png");
-  tRow.append(dayThreeDate, dayThreeTemp, dayThreeHumidity, dayThreeWind, dayThreeImage);
-  tBody.append(tRow);
+  tColumn.append(dayThreeDate, dayThreeTemp, dayThreeHumidity, dayThreeWind, dayThreeImage);
+  tRow.append(tColumn);
+  // tBody.append(tRow);
 
   var tBody = $("tbody");
-  var tRow = $("<tr>");
+  // var tRow = $("<tr>");
+  var tColumn = $("<td>");
   var dayFourDate = $("<p>").text(response.list[24].dt_txt);
-  var dayFourTemp = $("<td>").text(response.list[24].main.temp + " Degrees, F");
-  var dayFourHumidity = $("<td>").text(response.list[24].main.humidity + " Units of Humidity");
-  var dayFourWind = $("<td>").text("Wind at " + response.list[24].wind.speed + " MPH");
+  var dayFourTemp = $("<li>").text(response.list[24].main.temp + " Degrees, F");
+  var dayFourHumidity = $("<li>").text(response.list[24].main.humidity + " Units of Humidity");
+  var dayFourWind = $("<li>").text("Wind at " + response.list[24].wind.speed + " MPH");
   var dayFourImage = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + response.list[24].weather[0].icon + "@2x.png");
-  tRow.append(dayFourDate, dayFourTemp, dayFourHumidity, dayFourWind, dayFourImage);
-  tBody.append(tRow);
+  tColumn.append(dayFourDate, dayFourTemp, dayFourHumidity, dayFourWind, dayFourImage);
+  tRow.append(tColumn);
+  // tBody.append(tRow);
 
   var tBody = $("tbody");
-  var tRow = $("<tr>");
+  // var tRow = $("<tr>");
+  var tColumn = $("<td>");
   var dayFiveDate = $("<p>").text(response.list[32].dt_txt);
-  var dayFiveTemp = $("<td>").text(response.list[32].main.temp + " Degrees, F");
-  var dayFiveHumidity = $("<td>").text(response.list[32].main.humidity + " Units of Humidity");
-  var dayFiveWind = $("<td>").text("Wind at " + response.list[32].wind.speed + " MPH");
+  var dayFiveTemp = $("<li>").text(response.list[32].main.temp + " Degrees, F");
+  var dayFiveHumidity = $("<li>").text(response.list[32].main.humidity + " Units of Humidity");
+  var dayFiveWind = $("<li>").text("Wind at " + response.list[32].wind.speed + " MPH");
   var dayFiveImage = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + response.list[32].weather[0].icon + "@2x.png");
-  tRow.append(dayFiveDate, dayFiveTemp, dayFiveHumidity, dayFiveWind, dayFiveImage);
-  tBody.append(tRow);
+  tColumn.append(dayFiveDate, dayFiveTemp, dayFiveHumidity, dayFiveWind, dayFiveImage);
+  tRow.append(tColumn);
+  // tBody.append(tRow);
 }
 });

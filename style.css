@@ -1,10 +1,11 @@
 * {
     padding: 0px;
     margin: 0px;
+    background-color: lightgray;
 
 }
-/* 
-.row {
+
+/* .row {
     border: 1px solid red;
 }
 
@@ -31,4 +32,15 @@ div {
     display: block;
     clear: both;
    
+}
+
+td {
+    text-align: center;
+    background-color: lightskyblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+li {
+    text-decoration: lightskyblue;
 }
