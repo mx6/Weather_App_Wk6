@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-image: linear-gradient(#ccc, #eeeeee);
+    background-image: linear-gradient(lightblue, #eeeeee);
     background-repeat: no-repeat;
 }
 
